@@ -1,0 +1,26 @@
+{
+    "scriptFile": "__init__.py",
+    "bindings": [
+      {
+        "authLevel": "anonymous",
+        "type": "httpTrigger",
+        "direction": "in",
+        "name": "req",
+        "phonenumber": "req",
+        "url": "req",
+        "baseline_percentage": "req",
+        "duration": "req",
+        "methods": [
+          "get",
+          "post"
+        ]
+      },
+      {
+        "type": "http",
+        "direction": "out",
+        "name": "$return",
+        "url": "$return",
+        "phonenumber": "req"
+      }
+    ]
+  }

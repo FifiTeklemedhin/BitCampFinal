@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Amazon Webscraper</title>
+</head>
+<body>
+    <h1>Price Scraper</h1>
+    <form onsubmit="jsonifyData(event)" action="database.php" method="POST">
+        <h4>Phone number: </h4> 
+        <input id="phonenumber" name="phonenumber" type="tel" placeholder="only numbers" required class="field" autocomplete="off">
+
+        <h4>Product Name </h4>
+        <input id="product_name" name="product_name" type="text" placeholder="input the product price" required class="field" autocomplete="off"> 
+        
+        <h4>Product URL: </h4>
+        <input id="url" name="url" type="url" placeholder="input the product url" required class="field" autocomplete="off">
+
+        <h4>Baseline discount percentage: </h4>
+        <input id="percentage" name="percentage" type="number" placeholder="-" required class="field" autocomplete="off">    
+
+        <h4>Notification time frame (days): </h4>
+        <input id="duration" name="duration" type="number" placeholder="-" required class="field" autocomplete="off"> 
+        
+        <br>
+        <br>
+        <button type="submit" onsubmit="jsonifyData(event)" class="submit">Submit</button>
+        
+        <br>
+        <span class="form-status" id="popup"></span>
+        
+       
+
+    </form>
+
+    
+</body>
+</html>

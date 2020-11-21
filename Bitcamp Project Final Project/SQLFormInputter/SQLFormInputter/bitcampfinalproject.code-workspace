@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../PriceChecker"
+		},
+		{
+			"path": "../../../bitcamp-static-webapp"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "bitcamp-static-webapp"
+	}
+}
